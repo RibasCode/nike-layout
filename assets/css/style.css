@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# Nav
+--------------------------------------------------------------*/
+
+
+nav {
+    z-index: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 48px;
+
+    padding: 90px 120px;
+
+    background-color: #fff;
+    
+    font-family: 'Poppins', sans-serif;
+
+    user-select: none;
+
+    /* How to remove blue highlight when tapping links in mobile */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.nav__logo {
+    width: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.nav__li {
+    display: inline-block;
+
+    padding-left: 90px;
+}
+
+.nav__a {
+    padding: 5px 0px;
+
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+    opacity: .6;
+
+    transition: all 0.3s ease;
+}
+
+.nav__a:hover {
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+# Nav - Burger
+--------------------------------------------------------------*/
+
+
+.burger {
+    z-index: 100;
+    display: none;
+    position: absolute;
+
+    cursor: pointer;
+
+    top: 0%;
+    left: 0%;
+
+    margin-top: 15px;
+    margin-left: 15px;
+
+    /* How to remove blue highlight when tapping links in mobile */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+
+    transition: all 0.2s ease;
+}
+
+.burger__line1, .burger__line2, .burger__line3 {
+    width: 32px;
+    height: 1px;
+
+    margin: 7px;
+
+    background-color: #000;
+
+    transition: all 0.2s ease;
+}
+
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+#nike{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    height: 100vh;
+    width: 50%;
+}
+
+.right{
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    user-select: none;
+}
+
+
+.right__left{
+    height: 100vh;
+    width: 75%;
+
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right__right{
+    z-index: 1;
+    height: 100vh;
+    width: 25%;
+}
+
+.right__search{
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 90px;
+
+    background: linear-gradient( 135deg, rgba(0, 0, 0, 0.0),  rgba(0, 0, 0, 0.5)),#2a2d36;
+
+    transition: all 0.3s ease;
+
+    /* How to remove blue highlight when tapping links in mobile */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.right__search img{
+    height: 24px;
+
+    opacity: .75;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right__search img:hover{
+    opacity: 1;
+}
+
+.right__social{
+    position: relative;
+
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+
+    align-items: flex-end;
+
+    padding-bottom: 120px;
+
+    background: linear-gradient( -135deg, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.0)),rgb(206, 31, 64);
+
+    transition: all 0.3s ease;
+}
+
+.right__social-container{
+    position: relative;
+    left: 50%;
+    bottom: 0%;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+}
+
+.right__social-container p{
+    transform: rotate(-90deg);
+
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+
+    padding-top: 0px;
+
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right__social-container p:hover{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1),
+    0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+button{
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+
+    background-color: rgb(206, 31, 64);
+    box-shadow: 0px 20px 35px rgba(45, 45, 54, .4),
+    0px 20px 35px rgba(0, 0, 0, .2);
+
+    border: none;
+    border-radius: 50%;
+
+    outline:none;
+    user-select: none;
+    cursor: pointer;
+
+    /* How to remove blue highlight when tapping links in mobile */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+button:hover{
+    transform: translateY(-5px);
+
+    box-shadow: 0px 30px 37px rgba(45, 45, 54, .25),
+    0px 25px 37px rgba(0, 0, 0, .2);
+
+    transition: all 0.3s ease;
+}
+
+button img{
+    height: 24px;
+
+    margin-top: 5px;
+    margin-left: 5px;
+
+    /* per ferli la shadow al svg */
+    filter: drop-shadow( 0px 0px 15px rgba(0, 0, 0, 0.5));
+}
+
+button:hover img{
+    transform: rotate(360deg);
+
+    transition: all 0.8s ease;
+}
+
+.nike-letters{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    padding: 90px 120px;
+
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    font-weight: 300;
+    letter-spacing: 70px;
+    line-height: 150px;
+
+    user-select: none;
+}
+
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+
+.modal{
+    z-index: 101;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0,0,0,0.8);
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: visibility 0.4s ease, opacity 0.4s ease;
+}
+
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal input{
+    width: 35%;
+    height: 64px;
+
+    margin-bottom: 140px;
+    padding: 0px 30px;
+    padding-top: 3px;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 2px;
+
+    color: black;
+
+    outline:none;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.modal input:focus::placeholder{
+    color: transparent;
+    transition: all 0.3s ease;
+}
+
+
+/*--------------------------------------------------------------
+@Media Quiery - Portatil
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1440px) {
+
+
+
+
+}
+
+
+/*--------------------------------------------------------------
+@Media Quiery - PC Small Screen
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .right{
+        flex-direction: column;
+    }
+
+    .right__right{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 20vh;
+    }
+
+    .right__left{
+        width: 100%;
+        height: 100%;
+    }
+
+    .right__search{
+        align-items: center;
+
+        padding-top: 0px;
+    }
+
+    .right__social{
+        width: 100%;
+
+        align-items: center;
+
+        padding-bottom: 0px;
+    }
+
+    .right__social-container{
+        flex-direction: inherit;
+        align-items: center;
+        justify-content: center;
+
+        left: 0;
+
+        width: 100%;
+    }
+
+    .right__social-container p{
+        transform: rotate(0deg);
+
+        padding: 0px 50px;
+    }
+
+    .modal input{
+        width: 50%;
+    }
+
+
+}
+
+
+/*--------------------------------------------------------------
+@Media Quiery - Tablet
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+
+    #nike {
+        height: auto;
+    
+        flex-direction: column;
+    }
+
+    nav {
+        z-index: 100;
+
+        position: fixed;
+        top: 0%;
+        left: 0%;
+
+        height: 64px;
+
+        box-shadow: 0px 20px 35px rgba(45, 45, 54, .2),
+        0px 20px 35px rgba(0, 0, 0, .2);
+
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 0px 0px;
+    }
+
+    .nav__logo {
+        width: 52px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        cursor: pointer;
+    }
+
+    .nav__ul{
+        display: none;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        height: auto;
+        margin-top: 64px;
+    }
+
+    .nike-letters{
+        display: none;
+    }
+
+    .modal input{
+        width: 75%;
+    }
+
+    .right__social-container{
+        padding: 0px 50px;
+        justify-content: space-around;
+    }
+
+    .right__left{
+        filter: brightness(0.75);
+    }
+
+
+
+
+
+
+
+
+    .burger {
+        position: absolute;
+        left: 8px;
+
+        display: block;
+    }
+
+    .toggle .burger__line1 {
+        transform: rotate(45deg) translate(5.2px, 6.2px);
+    }
+
+    .toggle .burger__line2 {
+        opacity: 0;
+        
+        transform: translateX(-40px);
+    }
+
+    .toggle .burger__line3 {
+        transform: rotate(-45deg) translate(5.2px, -6.2px);
+    }
+
+
+
+
+    .nav__ul {
+        z-index: -1000;
+
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translate(-50%, 0%);
+        transform: translateY(100%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100vh;
+
+        line-height: 100px;
+ 
+        transition: all 0.5s ease;
+    }
+
+    .nav__li {
+    /* l'animació del aos mel desplaça */
+        padding: 0 !important;
+    /* perque faci la trancició al activar el menu del mobil de 0 a 1 */
+        opacity: 0;
+    }
+
+    .nav__li:first-child {
+        padding-top: 60px;
+    }
+
+
+    .nav__a {
+    /* per fer mes grouxuda l'area del click en mobil */
+        padding: 37px 0vw;
+    }
+
+    .nav-mobile-on {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transform: translateY(-6%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 110vh;
+
+        background-color: #fff;
+    } 
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+@Media Quiery - Mobile
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 576px) {
+
+
+    
+
+}

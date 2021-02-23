@@ -40,45 +40,6 @@ const search =document.querySelector('.right__search');
 
 
 
-// Uncaught TypeError: playBtn.addEventListener is not a function
-// S'ha solucionat cambiant el getElementsByClassName a getElementById i fent el respectiu canvi al html
-playBtn.addEventListener('click', () => {
-    
-    // declarem perque el playBtn i el social tinguin el mateix color random sino podriem fer simplement playBtn.style.backgroundColor = randomColor();
-    var randomColor = randomColor();
-    var randomDarkColor = randomDarkColor();
-
-    
-    function randomColor(){
-        var randomColor = 'rgb(' + Math.round(Math.random()*255) +
-        ',' + Math.round(Math.random()*255) +
-        ', '+ Math.round(Math.random()*255) + ')';
-    
-        return randomColor;
-    }
-
-
-    function randomDarkColor(){
-
-        let randomNum = Math.round(Math.random()*50);
-
-        var randomDarkColor = 'linear-gradient( 135deg, rgba(0, 0, 0, 0.0),  rgba(0, 0, 0, 0.5)),' +
-                            'rgb(' + randomNum +
-                             ',' + randomNum +
-                             ', '+ randomNum + ')';
-    
-        return randomDarkColor;
-    }
-    
-
-    playBtn.style.backgroundColor = randomColor;
-    social.style.backgroundColor = randomColor;
-    search.style.background = randomDarkColor;
-
-
-});
-
-
 
 
 navLinks.addEventListener('click', () => {

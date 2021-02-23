@@ -41,7 +41,6 @@ const search =document.querySelector('.right__search');
 
 
 
-
 navLinks.addEventListener('click', () => {
     
     // declarem perque el playBtn i el social tinguin el mateix color random sino podriem fer simplement     playBtn.style.backgroundColor = randomColor();

@@ -1,5 +1,5 @@
 const lupa = document.querySelector(".lupa");
-const modal = document.querySelector(".modal-lupa");
+const modalLupa = document.querySelector(".modal-lupa");
 
 
 
@@ -10,17 +10,17 @@ var modalOpen = false;
 lupa.addEventListener('click', () => {
 
     if(modalOpen == false) {
-        modal.classList.add("open");
+        modalLupa.classList.add("open");
         modalOpen = true;
     }
 
 });
 
 
-modal.addEventListener('click', (e) => {
+modalLupa.addEventListener('click', (e) => {
 
     if(e.target.classList.contains("open")) {
-        modal.classList.remove("open");
+        modalLupa.classList.remove("open");
         modalOpen = false;
     }
 

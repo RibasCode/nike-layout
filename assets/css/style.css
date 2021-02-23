@@ -317,7 +317,20 @@ button:hover img{
 --------------------------------------------------------------*/
 
 
-.modal{
+.video-nike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  iframe{
+  width: 1400px;
+  height: 788px;
+  border: none;
+  }
+
+.modal-lupa,
+.modal-play{
     z-index: 101;
 
     position: fixed;
@@ -340,13 +353,15 @@ button:hover img{
     transition: visibility 0.4s ease, opacity 0.4s ease;
 }
 
-.modal.open{
+.modal-lupa.open,
+.modal-play.open{
     visibility: visible;
     opacity: 1;
     pointer-events: all;
 }
 
-.modal input{
+.modal-lupa input,
+.modal-play input{
     width: 35%;
     height: 64px;
 
@@ -366,7 +381,8 @@ button:hover img{
     transition: all 0.3s ease;
 }
 
-.modal input:focus::placeholder{
+.modal-lupa input:focus::placeholder
+.modal-play input:focus::placeholder{
     color: transparent;
     transition: all 0.3s ease;
 }
@@ -379,7 +395,11 @@ button:hover img{
 
 @media screen and (max-width: 1440px) {
 
-
+        
+    iframe{
+    width: 1200px;
+    height: 675px;
+    }
 
 
 }
@@ -440,8 +460,14 @@ button:hover img{
         padding: 0px 50px;
     }
 
-    .modal input{
+    .modal-lupa input,
+    .modal-play input{
         width: 50%;
+    }
+
+    iframe{
+        width: 1000px;
+        height: 565px;
     }
 
 
@@ -507,7 +533,8 @@ button:hover img{
         display: none;
     }
 
-    .modal input{
+    .modal-lupa input,
+    .modal-play input{
         width: 75%;
     }
 
@@ -617,6 +644,13 @@ button:hover img{
             transform: translateY(0px);
         }
     }
+
+
+    iframe{
+        width: 100vw;
+        height: 50vh;
+    }
+
 
 }
 

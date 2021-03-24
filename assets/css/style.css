@@ -285,8 +285,8 @@ button:hover{
 button img{
     height: 2.4rem;
 
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+    margin-top: 4.5%;
+    margin-left: 4%;
 
     /* per ferli la shadow al svg */
     filter: drop-shadow( 0 0 1.5rem rgba(0, 0, 0, 0.5));

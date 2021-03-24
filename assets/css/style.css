@@ -6,9 +6,12 @@
     padding: 0px;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     overflow-x: hidden;
-    
 }
 
 a {
@@ -34,9 +37,9 @@ nav {
     align-items: center;
     
     width: 100%;
-    height: 48px;
+    height: 4.8rem;
 
-    padding: 90px 120px;
+    padding: 9rem 12rem;
 
     background-color: #fff;
     
@@ -50,7 +53,7 @@ nav {
 }
 
 .nav__logo {
-    width: 68px;
+    width: 6.8rem;
 
     display: flex;
     align-items: center;
@@ -62,18 +65,18 @@ nav {
 .nav__li {
     display: inline-block;
 
-    padding-left: 90px;
+    padding-left: 9rem;
 }
 
 .nav__a {
-    padding: 5px 0px;
+    padding: 0.5rem 0;
 
     color: #000;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
 
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 1rem;
 
     opacity: .6;
 
@@ -100,8 +103,8 @@ nav {
     top: 0%;
     left: 0%;
 
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
 
     /* How to remove blue highlight when tapping links in mobile */
     -webkit-tap-highlight-color: transparent;
@@ -111,10 +114,10 @@ nav {
 }
 
 .burger__line1, .burger__line2, .burger__line3 {
-    width: 32px;
-    height: 1px;
+    width: 3.2rem;
+    height: 0.1rem;
 
-    margin: 7px;
+    margin: 0.7rem;
 
     background-color: #000;
 
@@ -174,7 +177,7 @@ nav {
     display: flex;
     justify-content: center;
 
-    padding-top: 90px;
+    padding-top: 9rem;
 
     background: linear-gradient( 135deg, rgba(0, 0, 0, 0.0),  rgba(0, 0, 0, 0.5)),#2a2d36;
 
@@ -186,7 +189,7 @@ nav {
 }
 
 .right__search img{
-    height: 24px;
+    height: 2.4rem;
 
     opacity: .75;
 
@@ -208,7 +211,7 @@ nav {
 
     align-items: flex-end;
 
-    padding-bottom: 120px;
+    padding-bottom: 12rem;
 
     background: linear-gradient( -135deg, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.0)),rgb(206, 31, 64);
 
@@ -229,34 +232,34 @@ nav {
 .right__social-container p{
     transform: rotate(-90deg);
 
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 1);
 
-    padding-top: 0px;
+    padding-top: 0rem;
 
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .right__social-container p:hover{
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1),
-    0px 0px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 1),
+    0 0 1rem rgba(0, 0, 0, 0.8);
 }
 
 button{
-    height: 100px;
-    width: 100px;
+    height: 10rem;
+    width: 10rem;
 
     position: absolute;
 
     background-color: rgb(206, 31, 64);
-    box-shadow: 0px 20px 35px rgba(45, 45, 54, .4),
-    0px 20px 35px rgba(0, 0, 0, .2);
+    box-shadow: 0 2rem 3.5rem rgba(45, 45, 54, .4),
+    0 2rem 3.5rem rgba(0, 0, 0, .2);
 
     border: none;
     border-radius: 50%;
@@ -273,20 +276,20 @@ button{
 button:hover{
     transform: translateY(-5px);
 
-    box-shadow: 0px 30px 37px rgba(45, 45, 54, .25),
-    0px 25px 37px rgba(0, 0, 0, .2);
+    box-shadow: 0 3rem 3.7rem rgba(45, 45, 54, .25),
+    0 2.5rem 3.7rem rgba(0, 0, 0, .2);
 
     transition: all 0.3s ease;
 }
 
 button img{
-    height: 24px;
+    height: 2.4rem;
 
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
 
     /* per ferli la shadow al svg */
-    filter: drop-shadow( 0px 0px 15px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow( 0 0 1.5rem rgba(0, 0, 0, 0.5));
 }
 
 button:hover img{
@@ -300,14 +303,14 @@ button:hover img{
     bottom: 0%;
     left: 0%;
 
-    padding: 90px 120px;
+    padding: 9rem 12rem;
 
     color: #000;
     font-family: 'Poppins', sans-serif;
-    font-size: 120px;
+    font-size: 12rem;
     font-weight: 300;
-    letter-spacing: 70px;
-    line-height: 150px;
+    letter-spacing: 7rem;
+    line-height: 15rem;
 
     user-select: none;
 }
@@ -325,8 +328,8 @@ button:hover img{
   }
     
   iframe{
-  width: 1400px;
-  height: 788px;
+  width: 140rem;
+  height: 78.8rem;
   border: none;
   }
 
@@ -364,16 +367,16 @@ button:hover img{
 .modal-lupa input,
 .modal-play input{
     width: 35%;
-    height: 64px;
+    height: 6.4rem;
 
-    margin-bottom: 140px;
-    padding: 0px 30px;
-    padding-top: 3px;
+    margin-bottom: 14rem;
+    padding: 0 30rem;
+    padding-top: 0.3rem;
 
-    font-size: 16px;
+    font-size: 1.6rem;
 
     border: none;
-    border-radius: 2px;
+    border-radius: 0.2rem;
 
     color: black;
 
@@ -398,8 +401,8 @@ button:hover img{
 
         
     iframe{
-    width: 1200px;
-    height: 675px;
+    width: 120rem;
+    height: 67.5rem;
     }
 
 
@@ -434,7 +437,7 @@ button:hover img{
     .right__search{
         align-items: center;
 
-        padding-top: 0px;
+        padding-top: 0rem;
     }
 
     .right__social{
@@ -442,7 +445,7 @@ button:hover img{
 
         align-items: center;
 
-        padding-bottom: 0px;
+        padding-bottom: 0rem;
     }
 
     .right__social-container{
@@ -458,7 +461,7 @@ button:hover img{
     .right__social-container p{
         transform: rotate(0deg);
 
-        padding: 0px 50px;
+        padding: 0px 5rem;
     }
 
     .modal-lupa input,
@@ -467,8 +470,8 @@ button:hover img{
     }
 
     iframe{
-        width: 1000px;
-        height: 565px;
+        width: 100rem;
+        height: 56.5rem;
     }
 
 
@@ -498,17 +501,17 @@ button:hover img{
 
         height: 64px;
 
-        box-shadow: 0px 20px 35px rgba(45, 45, 54, .2),
-        0px 20px 35px rgba(0, 0, 0, .2);
+        box-shadow: 0 2rem 3.5rem rgba(45, 45, 54, .2),
+        0 2rem 3.5rem rgba(0, 0, 0, .2);
 
         flex-direction: column;
         justify-content: center;
 
-        padding: 0px 0px;
+        padding: 0rem 0rem;
     }
 
     .nav__logo {
-        width: 52px;
+        width: 5.2rem;
     
         display: flex;
         align-items: center;
@@ -527,7 +530,7 @@ button:hover img{
 
     .left{
         height: auto;
-        margin-top: 64px;
+        margin-top: 6.4rem;
     }
 
     .nike-letters{
@@ -540,7 +543,7 @@ button:hover img{
     }
 
     .right__social-container{
-        padding: 0px 50px;
+        padding: 0rem 5rem;
         justify-content: space-around;
     }
 
@@ -557,7 +560,7 @@ button:hover img{
 
     .burger {
         position: absolute;
-        left: 8px;
+        left: 0.8rem;
 
         display: block;
     }
@@ -596,7 +599,7 @@ button:hover img{
         width: 100%;
         height: 100vh;
 
-        line-height: 100px;
+        line-height: 10rem;
  
         transition: all 0.5s ease;
     }
@@ -609,13 +612,13 @@ button:hover img{
     }
 
     .nav__li:first-child {
-        padding-top: 60px;
+        padding-top: 6rem;
     }
 
 
     .nav__a {
     /* per fer mes grouxuda l'area del click en mobil */
-        padding: 37px 0vw;
+        padding: 3.7rem 0vw;
     }
 
     .nav-mobile-on {
